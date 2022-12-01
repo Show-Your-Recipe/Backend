@@ -4,10 +4,6 @@
 # ------------------------------------------------------------------------------
 FROM python:3.8-slim AS base
 
-# PIP
-# RUN apt-get update 
-# RUN  apt-get install -y wget 
-# wget
 RUN apt-get update && apt-get install -y gnupg2
 RUN apt-get install -y wget && rm -rf /var/lib/apt/lists/*
 
