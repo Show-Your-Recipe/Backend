@@ -71,7 +71,7 @@ workers = 3
 threads = 3
 worker_class = "uvicorn.workers.UvicornWorker"
 worker_connections = 1000
-timeout = 60
+timeout = 300
 keepalive = 2
 reload = True
 
