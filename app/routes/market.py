@@ -31,14 +31,7 @@ router = APIRouter(prefix='/market')
 
 @router.post("/inbag")
 async def register(market_info: MarketBag):
-    """
-    `회원가입 API`\n
-    :param sns_type:
-    :param reg_info:
-    :param session:
-    :return:
-    """
-    
+
     # market(user_info.id, user_info.pw, user_info.item)
     driver = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=options)
     driver.implicitly_wait(time_to_wait=5)
